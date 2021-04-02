@@ -1,0 +1,61 @@
+/*
+colors
+#959ba9 - grayish blue
+#F9F6F0 - light gray (background)
+#4b5673 - dark blue (primary)
+#bfa156 - tan (secondary)
+#947777 - reddish brown (alternate secondary)
+#73674B - dark brown
+*/
+
+body {
+    background-color: #F9F6F0;
+    font-family: "futura-pt", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px; /* Sets the font size to 16px */
+    line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+    color: #4b5673;
+  }
+
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+h1 {
+  font-family: "futura-pt-bold";
+  font-style: normal;
+  font-size: 2.75em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.15em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+img {
+  width: 100%;
+}
+a {
+  color: #4b5673;
+  text-decoration: none; /* No underlining */
+}
+.button {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #947777;
+  color: #F9F6F0; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border: 0px solid #73674B; /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
