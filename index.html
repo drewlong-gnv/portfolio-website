@@ -2,50 +2,50 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Drew Long">
     <meta name="description" content="Portfolio site for UX Designer and Researcher, Drew Long, includes completed projects and case studies in user experience design and research">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://use.typekit.net/yvn7zqq.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">    
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="img/icons/favicon-bubble.png" rel="shortcut icon">
     <title>Drew Long UX Designer/Researcher</title>
   </head>
   <body>
     <header>
-      <div>
-        <img src="https://drive.google.com/uc?id=11JDhw17qLA0YTvPL5yBrhjTgegI-Y_-F" alt="Drew Long"/>
+      <div class="container">
+        <img class="logo" src="https://drive.google.com/uc?id=11JDhw17qLA0YTvPL5yBrhjTgegI-Y_-F" alt="Drew Long"/>
         <nav>
           <ul>
             <li>
-              <a href="#">Work</a>
+              <a class="nav-link" href="#">Work</a>
             </li>
             <li>
-              <a href="about.html">About</a>
+              <a class="nav-link" href="about.html">About</a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </header>
     <main>
-      <div>
-        <div>
-          <h1>Hi, my name is Drew Long.
-            <span>I'm a UX designer and researcher with over ten years' experience in K-12 education and qualitative research.
-            </span>
-          </h1>
-          <p>
-            I am a UX Designer and Researcher focused on the front end of product design: generative research, defining the problem and experience design. My goal is to find an agency role that engages with diverse projects and stakeholders and thrives on collaboration across teams.
-          </p>
+        <div id="hero">
+          <div class="container">
+            <h1>Hi, my name is Drew Long.
+              <span>I'm a UX designer and researcher with over ten years' experience in K-12 education and qualitative research.
+              </span>
+            </h1>
+            <p>
+              I am a UX Designer and Researcher focused on the front end of product design: generative research, defining the problem and experience design. My goal is to find an agency role that engages with diverse projects and stakeholders and thrives on collaboration across teams.
+            </p>
+          </div>
         </div>
-      </div>
-      <div>
-        <div>
+      <div id="work">
+        <div class="container">
           <h2>My Work</h2>
-          <div>
+          <div class="row">
             <div>
               <picture>
                 <source srcset="https://drive.google.com/uc?id=1HsX6aXmmBhe2oqv5b6doDFnMXw6udu0T" media="(max-width:767px)" />
@@ -63,7 +63,7 @@
               <a class="button" href="">Read more</a>
             </div>
           </div>
-          <div>
+          <div class="row">
             <div>
               <picture>
                 <source srcset="https://drive.google.com/uc?id=1CYJiogl7ul2nw6jSYwXS1pYPeoDoAAWV" media="(max-width:767px)" />
@@ -85,7 +85,7 @@
       </div>
     </main>
     <footer id="contact">
-      <div>
+      <div class="container">
         <h2>Get in touch</h2>
         <p>
           Wanna chat about work? Or go for a run?
