@@ -8,13 +8,53 @@ colors
 #73674B - dark brown
 */
 
+/* Fonts
+font-family: futura-pt, sans-serif;
+  light
+    font-family: futura-pt, sans-serif;
+    font-weight: 300;
+  font-style: normal;
+  Book
+    font-family: futura-pt, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+font-family: futura-pt-condensed, sans-serif;
+  Book
+    font-family: futura-pt-condensed, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  Medium
+    font-family: futura-pt-condensed, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
+font-family: psfournier-std, sans-serif;
+  light
+    font-family: psfournier-std, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  Regular
+    font-family: psfournier-std, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+*/
+
+/* General */
+* {
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+}
+/* Typography */
 body {
     background-color: #F9F6F0;
     font-family: "futura-pt", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px; /* Sets the font size to 16px */
-    line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+    line-height: 1.7; /* Sets the line-height to 1.6 * the font-size */
     color: #4b5673;
   }
 
@@ -22,48 +62,163 @@ h1, h2, h3, h4 {
   line-height: 1.4;
 }
 h1 {
-  font-family: "futura-pt", sans-serif;
+  font-family: "psfournier-std", sans-serif;
+  font-weight: 300;
   font-style: normal;
-  font-size: 1.75em;
+  font-size: 1.875em;
   line-height: 1.3;
-  font-weight: 700;
 }
 
 h2 {
-  font-family: "futura-pt-condensed", sans-serif;
-  font-style: normal;
-  font-size: 2.15em;
+  font-family: "futura-pt-bold", sans-serif;
   font-weight: 700;
+  font-style: normal;
+  font-size: 1.5em;
   text-transform: uppercase;
 }
 
 h3 {
-  font-family: "futura-pt-condensed", sans-serif;
+  font-family: "psfournier-std", sans-serif;
+  font-weight: 700;
   font-style: normal;
-  font-weight: 500;
-  font-size: 1.75em;
+  font-size: 1.5em;
 }
 h4 {
-  font-size: 1.35em;
+  font-family: "futura-pt", sans-serif;
   font-weight: 400;
+  font-style: normal;
 }
-img {
+h5.tags {
+  font-family: "futura-pt", sans-serif;
+  font-weight: 400;
+  font-size: 0.9em;
+  font-style: normal;
+}
+/* Modified styles */
+/* nav {
+  display: flex;
   width: 100%;
+  margin: auto;
+} */
+/* nav > ul {
+  list-style-type: none;
+  padding: 0;
+  display: inline-block;
 }
-a {
+nav {
+  display: flex;
+  flex-direction: row;
+} */
+
+/* nav > ul > li {
+  display: inline-block;
+} */
+
+/* nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #4b5673;
+} */
+
+/* Header */
+header {
+  position: relative;
+  top: 0px;
+  padding-top: 15px;
+  text-align: left;
+  /* box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.5); */
+}
+a.nav-link {
+  padding: 0 15px;
+  display: inline-block;
   color: #4b5673;
   text-decoration: none; /* No underlining */
+  font-size: 1.125rem;
 }
-.button {
+a.nav-link:hover {
+  font-weight: 700;
+  transition: .5s;
+}
+a.nav-link:active {
+  font-weight: 700;
+}
+.left-logo {
+  margin-left: -15px;
+}
+.nav-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.right-nav {
+  margin-left: -15px;
+}
+
+/* Buttons */
+a.button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  text-transform: uppercase;
+  font-size: 0.9rem;
   background-color: #4b5673;
   color: #F9F6F0; /* needed to override the default link color */
-  font-weight: 400;
   padding: 10px;
   border-radius: 3px;
   border: 0px solid #73674B; /* width of the border, type, color */
   transition: 0.2s opacity;
 }
+/* Index  */
+/* Project animation */
+.sun {
+  animation-name: rise;
+  animation-duration: 4s;
+  /* animation-iteration-count: infinite; */
+  /* animation-direction: alternate; */
+  animation-timing-function: linear;
+  fill: #f7941d;
+}
+@keyframes rise {
+          0% {transform:translateY(150px); fill: #ffefd5;}
+          25% {transform:translateY(100px); fill: #ffc87c;}
+          50% {transform:translateY(50px); fill: #ffb347;}
+          100% {transform:translateY(0px); fill: #f7941d;}
+        }
+@keyframes fadeIn {
+  0% {opacity:0}
+  75% {opacity:0}
+  100% {opacity:1}
+}
+
+.animate__fadeIn {
+ animation-name:fadeIn;
+ animation-duration: 4s;
+ /* animation-iteration-count: infinite; */
+}
+picture.animated {
+  max-width: 767px;
+}
+
+/* Layout-general */
+.container {
+  padding: 0 24px;
+  margin: auto;
+}
+/* Layout-index */
+.cards-grid {
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+}
+.card-text {
+  /* padding-top: 15px; */
+}
+/* .card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content:
+} */
 /* .nav-link {
   transition: all .3s ease-in-out;
   justify-content: center;
@@ -91,44 +246,17 @@ a {
 .left {
   max-width: 500px;
 } */
-.container {
-  max-width: 1200px;
-  padding: 0 15px;
-  margin: auto;
-}
 
-header {
-  position: relative;
-  top: 0px;
-  padding-top: 15px;
-  /* box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.5); */
-}
+
+
 
 /* header .container {
   position: absolute;
   top: 0px;
 } */
 
-nav {
-  display: inline-block;
-  width: 100%;
-}
-nav > ul {
-  list-style-type: none;
-  padding: 0;
-}
 
-nav > ul > li {
-  display: inline-block;
-}
-
-nav > ul > li > a {
-  padding: 0 15px;
-  /* text-transform: uppercase; */
-  font-weight: 300;
-  color: #4b5673;
-}
-#hero {
+/* #hero {
   background-color: #F9F6F0;
   padding: 20px 0;
   display: inline-block;
@@ -136,17 +264,11 @@ nav > ul > li > a {
 }
 .row {
   margin: 25px 0;
-}
+} */
 
-* {
-  box-sizing: border-box;
-}
 
-.logo {
-  display: block;
-  margin: auto;
-  max-width: 250px;
-}
+
+
 
 #work .row { padding-bottom: 25px; border-bottom: 1px solid #4b5673; }
 
@@ -155,3 +277,101 @@ nav > ul > li > a {
   display: inline-block;
   width: 50px;
 }
+/* ABOUT-stylings */
+  picture.profile-pic {
+    display: inline-block;
+    max-width: 500px;
+  }
+  .about-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .skills-tools-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+/* Media queries */
+@media only screen and (min-width: 560px) {
+  .skills-tools-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .container {
+    max-width: 570px;
+  }
+}
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+
+@media only screen and (min-width: 640px) {
+  .container {
+    padding: 0 46px;
+    max-width: none;
+  }
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+/* Responsive changes-Index  */
+  .cards-grid { grid-template-columns: repeat(2, 1fr); }
+  .nav-wrapper {
+    flex-direction: row;
+  }
+  .logo {
+    display: inline-block;
+    max-width: 250px;
+  }
+  .single-card {
+  }
+
+/* Responsive changes-About    */
+  .skills-tools-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  .container {
+    max-width: 928px;
+  }
+  h1 {
+    font-weight: 400;
+    font-style: normal;
+  }
+  /* Responsive changes-ABOUT  */
+  .about-wrapper {
+    display: block;
+  }
+  .grid-row-XL {
+    display: grid;
+    grid-template-columns: 550px auto;
+  }
+  .skills-tools-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+/* ==============================
+XL devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+/* Extra large devices (1440px or larger) */
+/* @media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1150px;
+  }
+} */
