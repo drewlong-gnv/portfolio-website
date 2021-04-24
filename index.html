@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Drew Long">
     <meta name="description" content="Portfolio site for UX Designer and Researcher, Drew Long, includes completed projects and case studies in user experience design and research">
+    <script src="https://kit.fontawesome.com/d6a937fb3e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://use.typekit.net/yvn7zqq.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -12,75 +13,67 @@
     <title>Drew Long UX Designer/Researcher</title>
   </head>
   <body>
-    <header>
-      <div class="container">
-        <div class="nav-wrapper">
+    <header class="nav-wrapper">
           <div class="left-logo">
-            <a class="nav-link" href="/">
-              <!-- <img class="logo" src="https://drive.google.com/uc?id=11JDhw17qLA0YTvPL5yBrhjTgegI-Y_-F" alt="Drew Long"/> -->
-              Drew Long</a>
-          </div>
-          <div class="right-nav">
+            <a href="index-copynotion.html">
+              <img class="logo" src="img/icons/logo.png" alt="Drew Long"/>
+            </a>
+            <a class="nav-link name" href="index-copynotion.html">Drew Long</a>
+            </div>
+          <div class="right-nav" id="myNavtoggle">
             <a class="nav-link" href="#">Work</a>
             <a class="nav-link" href="about.html">About</a>
             <a class="nav-link" href="#contact">Contact</a>
+            <a href="javascript:void(0);" class="nav-link icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a>
           </div>
-        </div>
-      </div>
     </header>
-    <main>
-        <div id="hero">
-          <div class="container">
-            <div class="header-wrapper">
+    <main class="main-wrapper">
+        <div id="hero" class="header-wrapper">
               <h1>Hi, my name is Drew Long. I'm a UX designer and researcher with over ten years' experience in K-12 education and qualitative research.
               </h1>
-            </div>
+        </div>
             <!-- <p>
               I am a UX Designer and Researcher focused on the front end of product design: generative research, defining the problem and experience design. My goal is to find an agency role that engages with diverse projects and stakeholders and thrives on collaboration across teams.
             </p> -->
-          </div>
-        </div>
-      <div id="work">
-        <div class="container">
-          <div class="work-wrapper">
+        <div id="work" class="work-wrapper mt-1rem">
             <h2>My Work</h2>
             <div class="cards-grid">
               <div class="single-card">
-                <picture>
-                  <source srcset="https://drive.google.com/uc?id=1HsX6aXmmBhe2oqv5b6doDFnMXw6udu0T" media="(max-width:767px)" />
-                  <img src="https://drive.google.com/uc?id=1dbPdIPfA-CaD2kcKTJdIktKEjbQ9tGDi" alt="Fotonovela cover image depicting three essential screens" />
-                </picture>
-                <div class="card-text">
-                  <div class="card-text-top">
-                    <h3>Fotonovelas for Health Literacy</h3>
-                    <h4>
-                      This project is a prototype for a bilingual, mobile-first website that transforms a printed educational resource into an interactive digital one for low literacy users. As UX designer, I oversaw the entire project lifecycle, including a uniquely challenging user research phase, remote moderated usability testing and a final high fidelity prototype.
-                    </h4>
-                  </div>
-                  <div class="card-text-bottom">
+                <div class="card-flex-top">
+                  <picture>
+                    <source srcset="https://drive.google.com/uc?id=1HsX6aXmmBhe2oqv5b6doDFnMXw6udu0T" media="(max-width:767px)" />
+                    <img src="https://drive.google.com/uc?id=1dbPdIPfA-CaD2kcKTJdIktKEjbQ9tGDi" alt="Fotonovela cover image depicting three essential screens" />
+                  </picture>
+                  <h3>"Hacia la Clinica" - A bilingual, mobile-first web app for health literacy</h3>
+                  <h4>
+                    Mobile prototype
+                  </h4>
+                </div>
+                <div class="card-flex-bottom">
                     <h5 class="tags">
                         User Research, User Interviews, Surveys, User Journeys, User Flows, Wireframing, Prototyping, Preference Testing, Usability Testing, Responsive Design
                     </h5>
-                    <a class="button" href="">Read more</a>
+                    <a class="button" href="fotonovela.html">Read more</a>
                   </div>
                 </div>
-              </div>
               <div class="single-card">
-                <picture>
-                  <source srcset="https://drive.google.com/uc?id=1CYJiogl7ul2nw6jSYwXS1pYPeoDoAAWV" media="(max-width:767px)" />
-                  <img src="https://drive.google.com/uc?id=1U_wRF827Ft-8nm1sUA1Oa_6SjinXoZa5" alt="Cover image depicting realistic mockups screens for redesigned website" />
-                </picture>
-                <div class="card-text">
-                  <h3>University of Florida website redesign</h3>
-                  <h4>
-                    This project is my proposed redesign of the University of Florida’s website to make it easier for potential students to discover UF’s academic programs. Working in UX and UI roles, I completed discovery, concepting and design phases of work resulting in this mobile-first redesign.
-                  </h4>
+                <div class="card-flex-top">
+                  <picture>
+                    <source srcset="https://drive.google.com/uc?id=1CYJiogl7ul2nw6jSYwXS1pYPeoDoAAWV" media="(max-width:767px)" />
+                    <img src="https://drive.google.com/uc?id=1U_wRF827Ft-8nm1sUA1Oa_6SjinXoZa5" alt="Cover image depicting realistic mockups screens for redesigned website" />
+                  </picture>
+                    <h3>University of Florida website redesign</h3>
+                    <h4>
+                      This project is my proposed redesign of the University of Florida’s website to make it easier for potential students to discover UF’s academic programs. Working in UX and UI roles, I completed discovery, concepting and design phases of work resulting in this mobile-first redesign.
+                    </h4>
+                </div>
+                <div class="card-flex-bottom">
                   <h5 class="tags">
                     Competitive Analysis, Heuristic Analysis, Wireframing, Prototyping, Responsive Design, Style Guide
                   </h5>
                   <a class="button" href="uf-redesign.html">Read more</a>
-                </div>
               </div>
+            </div>
               <div class="single-card">
                 <picture class="animated">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 183.77 165.48">
@@ -89,11 +82,9 @@
                         .cls-1 {
                           /* fill: #f7941d; */
                         }
-
                         .cls-2 {
                           fill: #fff;
                         }
-
                         .cls-3 {
                           fill: #fff;
                         }
@@ -383,27 +374,27 @@
               </div>
             </div>
           </div>
-        </div>
     </main>
     <footer id="contact">
-      <div class="container">
-        <div class="footer-wrapper">
-          <h2>Get in touch</h2>
+      <div class="footer-wrapper">
+        <h2>Get in touch</h2>
           <p>Wanna chat about work? Or go for a run?</p>
-          <div>
-            <a href="mailto:drewlong.ux@gmail.com"><img class="footer-logo" src="https://drive.google.com/uc?id=1TMrjSvVKwMitJF6K5-hu8pw6rUfCQrgo" alt="email icon" />
+          <div class="footer-icons">
+            <a href="mailto:drewlong.ux@gmail.com"><img src="img/icons/icon-email.png" alt="email icon" />
             </a>
-          </div>
-          <div>
-            <a href="https://linkedin.com/in/drewlong" target="_blank"><img class="footer-logo" src="https://drive.google.com/uc?id=1MxsHmdyyJhJswuTpi6WeLZLWoqWenPjl" alt="linkedin icon" />
+            <a href="https://linkedin.com/in/drewlong" target="_blank"><img src="img/icons/icon-linkedin.png" alt="linkedin icon" />
             </a>
-            <a href="https://drewlong-ux.medium.com/" target="_blank"><img class="footer-logo" src="https://drive.google.com/uc?id=1xJqek0MebjlLuCDZenysOE1V2i6C3jCB" alt="medium icon" />
+            <a href="https://drewlong-ux.medium.com/" target="_blank"><img src="img/icons/icon-medium.png" alt="medium icon" />
             </a>
           </div>
           <p>Copyright Drew Long 2021</p>
-        </div>
       </div>
     </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous">
+    </script>
     <script src="js/scripts.js"></script>
   </body>
 </html>

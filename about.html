@@ -12,20 +12,18 @@
     <title>About</title>
   </head>
   <body>
-    <header>
-      <div class="container">
-        <div class="nav-wrapper">
-          <div class="left-logo">
-            <a class="nav-link" href="/">
-              <!-- <img class="logo" src="https://drive.google.com/uc?id=11JDhw17qLA0YTvPL5yBrhjTgegI-Y_-F" alt="Drew Long"/> -->
-              Drew Long</a>
-          </div>
-          <div class="right-nav">
-            <a class="nav-link" href="#">Work</a>
-            <a class="nav-link" href="about.html">About</a>
-            <a class="nav-link" href="#contact">Contact</a>
-          </div>
+    <header class="nav-wrapper">
+      <div class="left-logo">
+        <a href="index-copynotion.html">
+          <img class="logo" src="img/icons/logo.png" alt="Drew Long"/>
+        </a>
+        <a class="nav-link name" href="index-copynotion.html">Drew Long</a>
         </div>
+      <div class="right-nav" id="myNavtoggle">
+        <a class="nav-link" href="#">Work</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <a href="javascript:void(0);" class="nav-link icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a>
       </div>
     </header>
     <main>
@@ -96,25 +94,25 @@
       </div>
     </main>
     <footer id="contact">
-      <div class="container">
+      <div class="footer-wrapper">
         <h2>Get in touch</h2>
-        <p>
-          Wanna chat about work? Or go for a run?
-        </p>
-        <div>
-          <a href="mailto:drewlong.ux@gmail.com"><img class="footer-logo" src="https://drive.google.com/uc?id=1TMrjSvVKwMitJF6K5-hu8pw6rUfCQrgo" alt="email icon" />
-          </a>
-        </div>
-        <div>
-          <a href="https://linkedin.com/in/drewlong" target="_blank"><img class="footer-logo" src="https://drive.google.com/uc?id=1MxsHmdyyJhJswuTpi6WeLZLWoqWenPjl" alt="linkedin icon" />
-          </a>
-          <a href="https://drewlong-ux.medium.com/" target="_blank"><img class="footer-logo" src="https://drive.google.com/uc?id=1xJqek0MebjlLuCDZenysOE1V2i6C3jCB" alt="medium icon" />
-          </a>
-        </div>
-        <p>
-          Copyright Drew Long 2021
-        </p>
+          <p>Wanna chat about work? Or go for a run?</p>
+          <div class="footer-icons">
+            <a href="mailto:drewlong.ux@gmail.com"><img src="img/icons/icon-email.png" alt="email icon" />
+            </a>
+            <a href="https://linkedin.com/in/drewlong" target="_blank"><img src="img/icons/icon-linkedin.png" alt="linkedin icon" />
+            </a>
+            <a href="https://drewlong-ux.medium.com/" target="_blank"><img src="img/icons/icon-medium.png" alt="medium icon" />
+            </a>
+          </div>
+          <p>Copyright Drew Long 2021</p>
       </div>
     </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous">
+    </script>
+    <script src="js/scripts.js"></script>
   </body>
   </html>
