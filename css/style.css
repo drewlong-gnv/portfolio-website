@@ -43,8 +43,13 @@ font-family: psfournier-std, sans-serif;
 * {
   box-sizing: border-box;
 }
-img {
+img,
+figure,
+picture {
   width: 100%;
+}
+figure {
+  margin: 0;
 }
 /* Typography */
 body {
