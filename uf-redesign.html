@@ -1,200 +1,224 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Drew Long">
-    <meta name="description" content="Portfolio site for UX Designer and Researcher, Drew Long, includes completed projects and case studies in user experience design and research">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Drew Long" />
+    <meta
+      name="description"
+      content="Portfolio site for UX Designer and Researcher, Drew Long, includes completed projects and case studies in user experience design and research"
+    />
     <script src="https://kit.fontawesome.com/d6a937fb3e.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link rel="stylesheet" href="https://use.typekit.net/yvn7zqq.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="img/icons/favicon-bubble.png" rel="shortcut icon">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/yvn7zqq.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link href="img/icons/favicon-bubble.png" rel="shortcut icon" />
     <title>Drew Long UX Designer/Researcher</title>
   </head>
   <body>
     <header class="nav-wrapper">
-          <div class="left-logo">
-            <a href="index.html">
-              <img class="logo" src="img/icons/logo.png" alt="Drew Long"/>
-            </a>
-            <a class="nav-link name" href="index.html">Drew Long</a>
-            </div>
-          <div class="right-nav" id="myNavtoggle">
-            <a class="nav-link" href="index.html#work">Work</a>
-            <a class="nav-link" href="about.html">About</a>
-            <a class="nav-link" href="#contact">Contact</a>
-            <a href="javascript:void(0);" class="nav-link icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a>
-          </div>
+      <div class="left-logo">
+        <a href="index.html"> <img class="logo" src="img/icons/logo.png" alt="Drew Long" /> </a>
+        <a class="nav-link name" href="index.html">Drew Long</a>
+      </div>
+      <div class="right-nav" id="myNavtoggle">
+        <a class="nav-link" href="index.html#work">Work</a>
+        <a class="nav-link" href="https://drive.google.com/open?id=1OFwc0ughORxkbcW0Qx3QR_pTXxxuJg01">Resume</a>
+        <a class="nav-link" href="about.html">About</a> <a class="nav-link" href="#contact">Contact</a>
+        <a href="javascript:void(0);" class="nav-link icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a>
+      </div>
     </header>
     <main>
-        <div class="container">
-            <div>
-                <h1>
-                    University of Florida Website Redesign [mobile prototype]
-                </h1>
-                <picture>
-                  <source srcset="img/uf-redesign/mockups-phone-frames@1x.jpg" media="(max-width:767px)" />
-                  <img src="img/uf-redesign/mockups-phone-frames@2x.jpg" alt="Internal cover image, mockup screens in perspective" />
-                </picture>
-                <p>
-                    The University of Florida offers over 500 degree and certificate programs across its many colleges and departments. But it’s surprisingly difficult to find basic information about these programs. This project is my redesign of UF’s website to make it easier for potential students to discover UF’s academic programs.
-                </p>
-                <h3>Role
-                </h3>
-                <p>
-                    I worked independently on this redesign, completing all stages of work over two months. I employed Figma for research, Balsamiq for wireframes, Adobe XD for prototyping and Photoshop for mockups. This was a student project, with gratitude to mentor, Alex Tostado, for feedback, guidance and encouragement!
-                </p>
-                <h3>Problem
-                </h3>
-                <p>
-                    How can we redesign the website for the University of Florida to make searching academic programs easier and more intuitive?
-                <p>
-                <p>
-                    I was really surprised. While their academic program offerings are staggeringly extensive (500+ degree and certificate programs across 16 colleges and 87 schools and departments) - and prestigious (UF is currently ranked as the sixth-best public university, according to US News and World Report), it’s really difficult to explore these programs on UF’s website.
-                </p>
-                <h3>Solution</h3>
-                <p>My mobile-first redesign includes:</p>
-                <ul>
-                    <li>a straightforward search and filter feature for academic programs;</li>
-                    <li>a design template for easily browsed, high-level previews of academic programs;</li>
-                    <li>a redesigned and simplified landing page for Academic programs; and </li>
-                    <li>a redesigned and simplified top-level navigation.</li>
-                </ul>
-            </div>
-            <div>
-                <h2>Process: Discovery</h2>
-                <p>
-                    I started with a heuristic analysis, focusing on the pain points for a prospective student. I have been this user, so it was both familiar and somewhat personal. Figma worked really well for me at this stage for note-taking. Click <a htm="#">here</a> to see the Figma project file.
-                </p>
-                <picture>
-                  <source srcset="img/uf-redesign/uf-figma@1x.jpg" media="(max-width:767px)" />
-                  <img src="img/uf-redesign/uf-figma@2x.jpg" alt="Figma workspace screenshot" />
-                </picture>
-                <caption>It was easy to drag and drop screenshots and the Pages feature made it easy to organize content.
-                </caption>
-                <p>
-                    I discovered that it took five taps/clicks on my phone to reach a searchable list of undergraduate academic programs. Also, the path isn’t obvious. There are so many choices and they span multiple levels of navigation.
-                </p>
-                <picture>
-                  <source srcset="img/uf-redesign/uf-existing-flow-homepage-filter@1x.jpg" media="(max-width:767px)" />
-                  <img class="zoom" src="img/uf-redesign/uf-existing-flow-homepage-filter@2x.jpg" alt="Depiction of overlong user flow in existing website" />
-                </picture>
-                <caption>
-                    User flow: "As a prospective student, I want to find a searchable listing of undergraduate programs."
-                </caption>
-                <p>
-                    It takes an additional click to reach the graduate catalog, for which there actually is no search and filter (as you can see in the dead end represented with an "x" in the flow diagram).
-                </p>
-                <p>
-                    For inspiration, I also surveyed other university websites and identified examples that afforded users a straightforward search and filter interaction.
-                </p>
-                <h3>User Flow</h3>
-                <p>
-                    My redesigned user flow prioritizes the prospective student and integrates program descriptions at all degree levels. This flow also reduces clutter and ambiguity.
-                </p>
-                <p>
-                    "As a prospective student, I want to find information about UF's academic programs at all levels."
-                </p>
-                <picture>
-                  <source srcset="img/uf-redesign/flow-redesigned.jpg" media="(max-width:767px)" />
-                  <img class="zoom" src="img/uf-redesign/flow-redesigned@2x.jpg" alt="Redesigned user flow shortens path to program search and filter" />
-                </picture>
-                <caption>Redesigned user flow
-                </caption>
-                <h2>Process: Visual Design</h2>
-                <p>
-                    I began with low fidelity wireframes in Balsamiq. I took cues in layout and interaction from other sites that are mobile-responsive, easy to browse and quickly direct the user to a call to action, e.g., find more information, apply, contact the department, etc.
-                </p>
-                <p>
-                    For styling and design of UI elements, I created moodboards that aligned with a selection of tone words from UF’s official style guide. The goal was to adopt a distinctive, modern style that adapts UI elements familiar from other sites, but remains true to UF’s existing branding. This included the logo and primary color palette, which cannot be changed.
-                </p>
-                <picture>
-                  <source srcset="img/uf-redesign/moodboard@1x.jpg" media="(max-width:767px)" />
-                  <img class="zoom" src="img/uf-redesign/moodboard@2x.jpg" alt="Moodboard with inspiration for redesigned site" />
-                </picture>
-                <p>
-                    I was especially drawn to both the style and simplicity of interaction of the website of the University of Central Florida. I adopted several design elements from their website.
-                </p>
-                <p>
-                    I also took inspiration from non-university sites I found, such as this ecommerce site from Hugo Boss.
-                </p>
-                <p>
-                    I developed a style guide based on these recommendations, and including extensive guidelines for imagery. I had employee access to promotional photography, which made it easy to find authentic and highly specific photos.
-                </p>
-                <picture>
-                  <source srcset="img/uf-redesign/uf-style-guide@1x.jpg" media="(max-width:767px)" />
-                  <img class="zoom" src="img/uf-redesign/uf-style-guide@2x.jpg" alt="Collage of pages from style guide" />
-                </picture>
-                <Caption>
-                    Click here to download the style guide
-                </Caption>
-                <h3>Final Prototypes</h3>
-                <p>View the final prototype in action here.
-                </p>
-                <div>
-                  <picture>
-                    <source srcset="img/uf-redesign/uf-existing-hp-nav.jpg" media="(max-width:767px)" />
-                    <img class="zoom" src="img/uf-redesign/uf-existing-hp-nav@2x.jpg" alt="" />
-                  </picture>
-                  <picture>
-                    <source srcset="img/uf-redesign/uf-redesign-hp-nav@1x.jpg" media="(max-width:767px)" />
-                    <img class="zoom" src="img/uf-redesign/uf-redesign-hp-nav@2x.jpg" alt="" />
-                  </picture>
-                  <picture>
-                    <source srcset="img/uf-redesign/uf-existing-program-search@1x.jpg" media="(max-width:767px)" />
-                    <img class="zoom" src="img/uf-redesign/uf-existing-program-search@2x.jpg" alt="" />
-                  </picture>
-                  <picture>
-                    <source srcset="img/uf-redesign/existing-prog-preview.jpg" media="(max-width:767px)" />
-                    <img class="zoom" src="img/uf-redesign/existing-prog-preview@2x.jpg" alt="" />
-                  </picture>
-                  <picture>
-                    <source srcset="img/uf-redesign/redesign-prog-preview.jpg" media="(max-width:767px)" />
-                    <img class="zoom" src="img/uf-redesign/redesign-prog-preview@2x.jpg" alt="" />
-                  </picture>
-                  <picture>
-                    <source srcset="img/uf-redesign/uf-comparison-academic.jpg" media="(max-width:767px)" />
-                    <img class="zoom" src="img/uf-redesign/uf-comparison-academic@2x.jpg" alt="" />
-                  </picture>
-                </div>
-                <h3>Responsive Design</h3>
-                <picture>
-                  <source srcset="img/uf-redesign/mockups-responsive.jpg" media="(max-width:767px)" />
-                  <img class="zoom" src="img/uf-redesign/mockups-responsive@2x.jpg" alt="" />
-                </picture>
-            </div>
-            <div>
-                <h2>Final Words</h2>
-                <p>
-                    This project was a success on multiple fronts. It gave me the opportunity to focus on visual design, which I had found intimidating before. In particular, I improved my facility with Adobe XD and made my first efforts in Photoshop. Also, it reinforced that the earlier stages of design, including the research, user flows and wireframing, are my wheelhouse.
-                </p>
-                <p>
-                    In the future, this project would require extensive coordination and content generation across the university’s colleges and departments. While I do not know the feasibility of this effort, I think I have created an appealing prototype that would spark a lively conversation in a networking session with anyone on UF’s UX/web design team.
-                </p>
-            </div>
+      <div class="container">
+        <div>
+          <h1>University of Florida Website Redesign [mobile prototype]</h1>
+          <picture>
+            <source srcset="img/uf-redesign/mockups-phone-frames@1x.jpg" media="(max-width:767px)" />
+            <img src="img/uf-redesign/mockups-phone-frames@2x.jpg" alt="Internal cover image, mockup screens in perspective" />
+          </picture>
+          <p>
+            The University of Florida offers over 500 degree and certificate programs across its many colleges and departments.
+            But it’s surprisingly difficult to find basic information about these programs. This project is my redesign of UF’s
+            website to make it easier for potential students to discover UF’s academic programs.
+          </p>
+          <h3>Role</h3>
+          <p>
+            I worked independently on this redesign, completing all stages of work over two months. I employed Figma for
+            research, Balsamiq for wireframes, Adobe XD for prototyping and Photoshop for mockups. This was a student project,
+            with gratitude to mentor, Alex Tostado, for feedback, guidance and encouragement!
+          </p>
+          <h3>Problem</h3>
+          <p>
+            How can we redesign the website for the University of Florida to make searching academic programs easier and more
+            intuitive?
+          </p>
+
+          <p></p>
+          <p>
+            I was really surprised. While their academic program offerings are staggeringly extensive (500+ degree and
+            certificate programs across 16 colleges and 87 schools and departments) - and prestigious (UF is currently ranked as
+            the sixth-best public university, according to US News and World Report), it’s really difficult to explore these
+            programs on UF’s website.
+          </p>
+          <h3>Solution</h3>
+          <p>My mobile-first redesign includes:</p>
+          <ul>
+            <li>a straightforward search and filter feature for academic programs;</li>
+            <li>a design template for easily browsed, high-level previews of academic programs;</li>
+            <li>a redesigned and simplified landing page for Academic programs; and</li>
+            <li>a redesigned and simplified top-level navigation.</li>
+          </ul>
         </div>
+        <div>
+          <h2>Process: Discovery</h2>
+          <p>
+            I started with a heuristic analysis, focusing on the pain points for a prospective student. I have been this user,
+            so it was both familiar and somewhat personal. Figma worked really well for me at this stage for note-taking. Click
+            <a href="#">here</a> to see the Figma project file.
+          </p>
+          <figure>
+            <img class="zoom" src="img/uf-redesign/uf-figma@2x.jpg" alt="Figma workspace screenshot" />
+            <figcaption>
+              It was easy to drag and drop screenshots and the Pages feature made it easy to organize content.
+            </figcaption>
+          </figure>
+          <p>
+            I discovered that it took five taps/clicks on my phone to reach a searchable list of undergraduate academic
+            programs. Also, the path isn’t obvious. There are so many choices and they span multiple levels of navigation.
+          </p>
+          <figure>
+            <img
+              class="zoom"
+              src="img/uf-redesign/uf-existing-flow-homepage-filter@2x.jpg"
+              alt="Depiction of overlong user flow in existing website"
+            />
+            <figcaption>
+              User flow: "As a prospective student, I want to find a searchable listing of undergraduate programs."
+            </figcaption>
+          </figure>
+          <p>
+            It takes an additional click to reach the graduate catalog, for which there actually is no search and filter (as you
+            can see in the dead end represented with an "x" in the flow diagram).
+          </p>
+          <p>
+            For inspiration, I also surveyed other university websites and identified examples that afforded users a
+            straightforward search and filter interaction.
+          </p>
+          <h3>User Flow</h3>
+          <p>
+            My redesigned user flow prioritizes the prospective student and integrates program descriptions at all degree
+            levels. This flow also reduces clutter and ambiguity.
+          </p>
+          <p>"As a prospective student, I want to find information about UF's academic programs at all levels."</p>
+          <figure>
+            <img
+              class="zoom"
+              src="img/uf-redesign/flow-redesigned@2x.jpg"
+              alt="Redesigned user flow shortens path to program search and filter"
+            />
+            <figcaption>Redesigned user flow</figcaption>
+          </figure>
+          <h2>Process: Visual Design</h2>
+          <p>
+            I began with low fidelity wireframes in Balsamiq. I took cues in layout and interaction from other sites that are
+            mobile-responsive, easy to browse and quickly direct the user to a call to action, e.g., find more information,
+            apply, contact the department, etc.
+          </p>
+          <p>
+            For styling and design of UI elements, I created moodboards that aligned with a selection of tone words from UF’s
+            official style guide. The goal was to adopt a distinctive, modern style that adapts UI elements familiar from other
+            sites, but remains true to UF’s existing branding. This included the logo and primary color palette, which cannot be
+            changed.
+          </p>
+          <picture>
+            <source srcset="img/uf-redesign/moodboard@1x.jpg" media="(max-width:767px)" />
+            <img class="zoom" src="img/uf-redesign/moodboard@2x.jpg" alt="Moodboard with inspiration for redesigned site" />
+          </picture>
+          <p>
+            I was especially drawn to both the style and simplicity of interaction of the website of the University of Central
+            Florida. I adopted several design elements from their website.
+          </p>
+          <p>I also took inspiration from non-university sites I found, such as this ecommerce site from Hugo Boss.</p>
+          <p>
+            I developed a style guide based on these recommendations, and including extensive guidelines for imagery. I had
+            employee access to promotional photography, which made it easy to find authentic and highly specific photos.
+          </p>
+          <figure>
+            <img class="zoom" src="img/uf-redesign/uf-style-guide@2x.jpg" alt="Collage of pages from style guide" />
+            <figcaption>Click here to download the style guide</figcaption>
+          </figure>
+
+          <h3>Final Prototypes</h3>
+          <p>View the final prototype in action here.</p>
+          <div>
+            <picture>
+              <source srcset="img/uf-redesign/uf-existing-hp-nav.jpg" media="(max-width:767px)" />
+              <img class="zoom" src="img/uf-redesign/uf-existing-hp-nav@2x.jpg" alt="" />
+            </picture>
+            <picture>
+              <source srcset="img/uf-redesign/uf-redesign-hp-nav@1x.jpg" media="(max-width:767px)" />
+              <img class="zoom" src="img/uf-redesign/uf-redesign-hp-nav@2x.jpg" alt="" />
+            </picture>
+            <picture>
+              <source srcset="img/uf-redesign/uf-existing-program-search@1x.jpg" media="(max-width:767px)" />
+              <img class="zoom" src="img/uf-redesign/uf-existing-program-search@2x.jpg" alt="" />
+            </picture>
+            <picture>
+              <source srcset="img/uf-redesign/existing-prog-preview.jpg" media="(max-width:767px)" />
+              <img class="zoom" src="img/uf-redesign/existing-prog-preview@2x.jpg" alt="" />
+            </picture>
+            <picture>
+              <source srcset="img/uf-redesign/redesign-prog-preview.jpg" media="(max-width:767px)" />
+              <img class="zoom" src="img/uf-redesign/redesign-prog-preview@2x.jpg" alt="" />
+            </picture>
+            <picture>
+              <source srcset="img/uf-redesign/uf-comparison-academic.jpg" media="(max-width:767px)" />
+              <img class="zoom" src="img/uf-redesign/uf-comparison-academic@2x.jpg" alt="" />
+            </picture>
+          </div>
+          <h3>Responsive Design</h3>
+          <picture>
+            <source srcset="img/uf-redesign/mockups-responsive.jpg" media="(max-width:767px)" />
+            <img class="zoom" src="img/uf-redesign/mockups-responsive@2x.jpg" alt="" />
+          </picture>
+        </div>
+        <div>
+          <h2>Final Words</h2>
+          <p>
+            This project was a success on multiple fronts. It gave me the opportunity to focus on visual design, which I had
+            found intimidating before. In particular, I improved my facility with Adobe XD and made my first efforts in
+            Photoshop. Also, it reinforced that the earlier stages of design, including the research, user flows and
+            wireframing, are my wheelhouse.
+          </p>
+          <p>
+            In the future, this project would require extensive coordination and content generation across the university’s
+            colleges and departments. While I do not know the feasibility of this effort, I think I have created an appealing
+            prototype that would spark a lively conversation in a networking session with anyone on UF’s UX/web design team.
+          </p>
+        </div>
+      </div>
     </main>
     <footer id="contact">
       <div class="footer-wrapper">
         <h2>Get in touch</h2>
-          <p>Wanna chat about work? Or go for a run?</p>
-          <div class="footer-icons">
-            <a href="mailto:drewlong.ux@gmail.com"><img src="img/icons/svg/icon-email-onblue.svg" alt="email icon" />
-            </a>
-            <a href="https://linkedin.com/in/drewlong" target="_blank"><img src="img/icons/svg/icon-linkedin-onblue.svg" alt="linkedin icon" />
-            </a>
-            <a href="https://drewlong-ux.medium.com/" target="_blank"><img src="img/icons/svg/icon-medium-on-blue.svg" alt="medium icon" />
-            </a>
-          </div>
-          <p>Copyright Drew Long 2021</p>
+        <p>Wanna chat about work? Or go for a run?</p>
+        <div class="footer-icons">
+          <a href="mailto:drewlong.ux@gmail.com"><img src="img/icons/svg/icon-email-onblue.svg" alt="email icon" /> </a>
+          <a href="https://linkedin.com/in/drewlong" target="_blank"
+            ><img src="img/icons/svg/icon-linkedin-onblue.svg" alt="linkedin icon" />
+          </a>
+          <a href="https://drewlong-ux.medium.com/" target="_blank"
+            ><img src="img/icons/svg/icon-medium-on-blue.svg" alt="medium icon" />
+          </a>
+        </div>
+        <p>Copyright Drew Long 2021</p>
       </div>
     </footer>
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous">
-    </script>
+      crossorigin="anonymous"
+    ></script>
     <script src="js/scripts.js"></script>
   </body>
-  </html>
+</html>
