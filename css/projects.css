@@ -46,7 +46,11 @@ article {
   padding: 0 15px;
   margin: auto;
 }
-
+@media (max-width: 479px) {
+  main {
+    padding-top: 100px;
+  }
+}
 @media (min-width: 576px) {
   .container {
     max-width: 540px;

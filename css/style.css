@@ -107,8 +107,7 @@ header.nav-wrapper {
   align-items: flex-start;
   padding: 25px;
   display: flex;
-  position: relative;
-  height: 150px;
+  height: auto;
   width: 100%;
   margin-bottom: 0.25em;
   flex-direction: column;
@@ -125,7 +124,7 @@ header.nav-wrapper {
   align-items: flex-start;
 }
 .left-logo:nth-child(1) img {
-  margin: -5px 0 0 0;
+  margin: -10px 0 0 0;
 }
 .left-logo:nth-child(2) {
   padding: 0;
@@ -177,6 +176,12 @@ a.icon {
 }
 .right-nav.responsive :not(:last-child) {
   padding-top: 5px;
+}
+@media screen and (max-width: 479px) {
+  header.nav-wrapper {
+    background-color: #ebeae7;
+    position: fixed;
+  }
 }
 @media screen and (min-width: 480px) {
   div.right-nav {
@@ -238,12 +243,19 @@ a.icon {
 }
 
 /* ----Content Styling---- */
+
 .max-width {
   max-width: 1080px;
   margin: auto;
 }
 .work-wrapper.mt-1rem {
   margin-top: 5rem;
+}
+@media (max-width: 479px) {
+  .main-wrapper,
+  #main {
+    padding-top: 100px;
+  }
 }
 @media (max-width: 546px) {
   .main-wrapper,
@@ -274,6 +286,7 @@ a.icon {
     display: flex;
     flex-direction: column;
     height: auto;
+    padding-bottom: 20px;
   }
 }
 @media screen and (min-width: 371px) {
